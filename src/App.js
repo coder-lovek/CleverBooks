@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Hero from './components/Hero';
+import KeyProblems from './components/KeyProblems';
+import './App.css';
+import KeyMetrics from './components/KeyMetrics';
+import Reviews from './components/Reviews';
+import ProblemTarget from './components/ProblemTarget';
+import CtaSection from './components/CtaSection';
+import Footer from './components/Footer';
+import Navbar from './components/NavBar';
+
+const App = () => {
+    return (
+        <div>
+            <Navbar/>
+            <Hero />
+            <KeyProblems />
+            <KeyMetrics/>
+            <Reviews/>
+            <ProblemTarget/>
+            <CtaSection/>
+            <Footer/>
+
+        </div>
+    );
+};
 
 export default App;
